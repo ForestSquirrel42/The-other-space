@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ad5bd557bc814790bee830c63e8e3, type: 3}
+  m_Name: 2 FollowerEnemy(Count two)
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 8529142968732920044, guid: 94ee19a1936b198449d4dc86932e4de5, type: 3}
+  - {fileID: 8529142968732920044, guid: 3ddbf624f7ac8244986450edfb0db07a, type: 3}
+  pathPrefabs:
+  - {fileID: 3194963144180096446, guid: 9f8647cab3d7cf241a33d1e4f7739e71, type: 3}
+  - {fileID: 3774879622986459357, guid: badd9e41fc7f8a248a6da0699eae64a5, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnRandomnessFactor: 0.7
+  moveSpeed: 3
+  numberOfEnemies: 2

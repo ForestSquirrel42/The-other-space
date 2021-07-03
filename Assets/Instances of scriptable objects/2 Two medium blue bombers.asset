@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ad5bd557bc814790bee830c63e8e3, type: 3}
+  m_Name: 2 Two medium blue bombers
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 8529142968732920044, guid: 3f98fab954c70a0478c5a4746da020ad, type: 3}
+  pathPrefabs:
+  - {fileID: 6716796420423006192, guid: 7b673b30e22a7094b9df9f214e1b82d0, type: 3}
+  timeBetweenSpawns: 0.01
+  numberOfEnemies: 2

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - PlayerShield
+  - Asteroid
+  - Win screen
+  - Current currency value
+  - Player weapon
+  - Enemy weapon
+  - Weapon
+  - Local scene loader
+  - Endlevel dialogue
+  - Enemy of type chaser
+  - Boss
+  - Flying station
+  - Startlevel dialogue
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - PlayerLaser
+  - Boosts
+  - EnemyLaser
+  - Enemy
+  - PlayerShield
+  - Asteroids
+  - Shooting activator
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1203534843
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Lasers
+    uniqueID: 835111349
+    locked: 0
+  - name: Player
+    uniqueID: 1300851423
+    locked: 0

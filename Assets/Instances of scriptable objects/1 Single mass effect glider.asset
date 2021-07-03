@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ad5bd557bc814790bee830c63e8e3, type: 3}
+  m_Name: 1 Single mass effect glider
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 8529142968732920044, guid: a4ffc64b2cb92b645a9d0955371bb4d6, type: 3}
+  pathPrefabs:
+  - {fileID: 3228883597640007357, guid: 3be81eb966f3304429952678853f78e1, type: 3}
+  timeBetweenSpawns: 2
+  numberOfEnemies: 1

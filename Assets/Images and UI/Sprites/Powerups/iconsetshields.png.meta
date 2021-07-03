@@ -1,0 +1,1356 @@
+fileFormatVersion: 2
+guid: 9cd019381dcfb76469a246c859eab438
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2565408375559605339
+    second: iconsetshields_0
+  - first:
+      213: -2104347029407151388
+    second: iconsetshields_1
+  - first:
+      213: -6565498616050042948
+    second: iconsetshields_2
+  - first:
+      213: 1472156468357425825
+    second: iconsetshields_3
+  - first:
+      213: -1221974518414417706
+    second: iconsetshields_4
+  - first:
+      213: -4704906707600764796
+    second: iconsetshields_5
+  - first:
+      213: -4186398794976101315
+    second: iconsetshields_6
+  - first:
+      213: 5361240828762826182
+    second: iconsetshields_7
+  - first:
+      213: 1332963546089769299
+    second: iconsetshields_8
+  - first:
+      213: -3332387213533774770
+    second: iconsetshields_9
+  - first:
+      213: -7622364998752194680
+    second: iconsetshields_10
+  - first:
+      213: 1668775147272875043
+    second: iconsetshields_11
+  - first:
+      213: -6751003388295965582
+    second: iconsetshields_12
+  - first:
+      213: -56372895799358148
+    second: iconsetshields_13
+  - first:
+      213: -7222717984948488188
+    second: iconsetshields_14
+  - first:
+      213: -4074197971397032896
+    second: iconsetshields_15
+  - first:
+      213: 717152277613934500
+    second: iconsetshields_16
+  - first:
+      213: -8726390960286984806
+    second: iconsetshields_17
+  - first:
+      213: -2689497658447032558
+    second: iconsetshields_18
+  - first:
+      213: -6151706979522869092
+    second: iconsetshields_19
+  - first:
+      213: 3567051006584989494
+    second: iconsetshields_20
+  - first:
+      213: -8304851026131007878
+    second: iconsetshields_21
+  - first:
+      213: 7105382991526002627
+    second: iconsetshields_22
+  - first:
+      213: 1649773260643108037
+    second: iconsetshields_23
+  - first:
+      213: -7765935792218125482
+    second: iconsetshields_24
+  - first:
+      213: -3327857852725129246
+    second: iconsetshields_25
+  - first:
+      213: -9066377448144189059
+    second: iconsetshields_26
+  - first:
+      213: -2619679844183729683
+    second: iconsetshields_27
+  - first:
+      213: 1400682856060549258
+    second: iconsetshields_28
+  - first:
+      213: 2690733135110834106
+    second: iconsetshields_29
+  - first:
+      213: 7073050549955250251
+    second: iconsetshields_30
+  - first:
+      213: 5541284289278646325
+    second: iconsetshields_31
+  - first:
+      213: 842860493712710834
+    second: iconsetshields_32
+  - first:
+      213: -9027765093477363095
+    second: iconsetshields_33
+  - first:
+      213: -5188889813754551209
+    second: iconsetshields_34
+  - first:
+      213: 2120529367570177939
+    second: iconsetshields_35
+  - first:
+      213: 8952154734851988817
+    second: iconsetshields_36
+  - first:
+      213: 8248889086892504568
+    second: iconsetshields_37
+  - first:
+      213: -1749495108380638326
+    second: iconsetshields_38
+  - first:
+      213: 5111318774580051578
+    second: iconsetshields_39
+  - first:
+      213: 731681628176466234
+    second: iconsetshields_40
+  - first:
+      213: -6908332968431326666
+    second: iconsetshields_41
+  - first:
+      213: -2406456710911579419
+    second: iconsetshields_42
+  - first:
+      213: 5469119073422472973
+    second: iconsetshields_43
+  - first:
+      213: -9199671498009655573
+    second: iconsetshields_44
+  - first:
+      213: 5095971285952316337
+    second: iconsetshields_45
+  - first:
+      213: 166162294443375717
+    second: iconsetshields_46
+  - first:
+      213: -4051867492423132724
+    second: iconsetshields_47
+  - first:
+      213: -3394821130494721901
+    second: iconsetshields_48
+  - first:
+      213: 7895663453811052788
+    second: iconsetshields_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iconsetshields_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cca0153592a9320800000000000000
+      internalID: 2565408375559605339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 30
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eac90ca68bdbc2e0800000000000000
+      internalID: -2104347029407151388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 61
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7b4015bc9a2e4a0800000000000000
+      internalID: -6565498616050042948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 30
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aaec3612862e6410800000000000000
+      internalID: 1472156468357425825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 30
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0645956acaa0fe0800000000000000
+      internalID: -1221974518414417706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4809a10f640d4beb0800000000000000
+      internalID: -4704906707600764796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c7359f97ce6e5c0800000000000000
+      internalID: -4186398794976101315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_7
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 289
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5aab1f024f66a40800000000000000
+      internalID: 5361240828762826182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_8
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 289
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359c9376843af7210800000000000000
+      internalID: 1332963546089769299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 256
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cf34b2c7bf0c1d0800000000000000
+      internalID: -3332387213533774770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f210d2b6be73690800000000000000
+      internalID: -7622364998752194680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c2337a72ea82710800000000000000
+      internalID: 1668775147272875043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 227
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274192bcf2e9f42a0800000000000000
+      internalID: -6751003388295965582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d4be26629b73ff0800000000000000
+      internalID: -56372895799358148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408f152a240c3cb90800000000000000
+      internalID: -7222717984948488188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 227
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0444342f78a8577c0800000000000000
+      internalID: -4074197971397032896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a77a056236d3f900800000000000000
+      internalID: 717152277613934500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a951ae0f7a1a5e680800000000000000
+      internalID: -8726390960286984806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f0504112cfcaad0800000000000000
+      internalID: -2689497658447032558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c988f33681fb0aaa0800000000000000
+      internalID: -6151706979522869092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637a23fcdf5b08130800000000000000
+      internalID: 3567051006584989494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_21
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a764ce22efd3fbc80800000000000000
+      internalID: -8304851026131007878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 227
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf72035f246b9260800000000000000
+      internalID: 7105382991526002627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c402982a0c25e610800000000000000
+      internalID: 1649773260643108037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 33
+        width: 31
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bc85cea8ad93490800000000000000
+      internalID: -7765935792218125482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef03592ae211d1d0800000000000000
+      internalID: -3327857852725129246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 128
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79c0c32fb1cd2280800000000000000
+      internalID: -9066377448144189059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_27
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de99d26bf0705abd0800000000000000
+      internalID: -2619679844183729683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_28
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 96
+        width: 31
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88f77ee2a9307310800000000000000
+      internalID: 1400682856060549258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_29
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab787afb787675520800000000000000
+      internalID: 2690733135110834106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_30
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 31
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48c6742006882260800000000000000
+      internalID: 7073050549955250251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_31
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 96
+        width: 31
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53818edb3b896ec40800000000000000
+      internalID: 5541284289278646325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_32
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 32
+        width: 31
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcd4f2472172bb00800000000000000
+      internalID: 842860493712710834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_33
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 32
+        width: 31
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9625c978a7fe6b280800000000000000
+      internalID: -9027765093477363095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_34
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 32
+        width: 31
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7546480d43c5df7b0800000000000000
+      internalID: -5188889813754551209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_35
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 32
+        width: 31
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fddc98932ad6d10800000000000000
+      internalID: 2120529367570177939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_36
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 32
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d1f210d417c3c70800000000000000
+      internalID: 8952154734851988817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_37
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 32
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5f2d78be0f97270800000000000000
+      internalID: 8248889086892504568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_38
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 32
+        width: 31
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8340b8d77b88b7e0800000000000000
+      internalID: -1749495108380638326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ef0a4385d0fe640800000000000000
+      internalID: 5111318774580051578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_40
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 33
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3143207094772a00800000000000000
+      internalID: 731681628176466234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_41
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 31
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ae78264cba020a0800000000000000
+      internalID: -6908332968431326666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_42
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 33
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaa2c21f5c8a9ed0800000000000000
+      internalID: -2406456710911579419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_43
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 33
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07f8a512d636eb40800000000000000
+      internalID: 5469119073422472973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_44
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be649d6b383345080800000000000000
+      internalID: -9199671498009655573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_45
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 32
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b347cc82e688b640800000000000000
+      internalID: 5095971285952316337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_46
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c7c57f9b35e4200800000000000000
+      internalID: 166162294443375717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_47
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc99a2dbbffd4c7c0800000000000000
+      internalID: -4051867492423132724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_48
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3904fd81b2c23e0d0800000000000000
+      internalID: -3394821130494721901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconsetshields_49
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f011760418039d60800000000000000
+      internalID: 7895663453811052788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

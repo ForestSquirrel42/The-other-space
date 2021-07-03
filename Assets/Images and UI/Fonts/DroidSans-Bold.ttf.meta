@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a5859abc2a9b9324db82059392d20efd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Droid Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c4d89adb202de4e4b9d1a6f0287010ae, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

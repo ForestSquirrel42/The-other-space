@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3ec8dddd66d6b6340b3bf2c36a3ebc44
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Quirky
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3ca8b8d7f5ad55f4b915e1b552425fc4, type: 3}
+  - {fileID: 12800000, guid: 23d1a2d7e92862041bd2f93cd1578504, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

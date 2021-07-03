@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &688655437756108742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688655437756108736}
+  - component: {fileID: 688655437756108743}
+  - component: {fileID: 688655437756108737}
+  - component: {fileID: 7730760}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688655437756108736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688655437756108742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7897878, y: 4.140389, z: -0.09553339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688655437756108743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688655437756108742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3287c9d61b6534942a17fc106c887902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlasmaCount: 0
+  currentLevel: 1
+  maxShieldEnergy: 200
+  maxPlayerHealth: 100
+  playerDamage: 10
+--- !u!114 &688655437756108737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688655437756108742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d32996e32bf0d469f2296f967b85f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7730760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688655437756108742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123803d0b8e58274b9117053d4bcce7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winScreen: {fileID: 0}
+  youDiedScreen: {fileID: 0}
+  references: {fileID: 0}
+  currencyValue: {fileID: 0}
+  DM: {fileID: 0}
+  GM: {fileID: 0}
+  PM: {fileID: 0}
+  progress: {fileID: 0}
+  DialogueManagerOne: {fileID: 0}
+  PS: {fileID: 0}
+  levelCompleteMenuButton: {fileID: 0}
+  pauseUIMenuButton: {fileID: 0}
+  resumeButton: {fileID: 0}
+  levelCompleteNextLevelButton: {fileID: 0}
+  youDiedMenuButton: {fileID: 0}
+  youDiedRestartButton: {fileID: 0}
+  pauseMenuUI: {fileID: 0}

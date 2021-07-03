@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ad5bd557bc814790bee830c63e8e3, type: 3}
+  m_Name: 4 Player chasers (count 4)
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 8529142968732920044, guid: 22d842609f862ae41bf5d360971dc560, type: 3}
+  - {fileID: 8529142968732920044, guid: 119b586b0c911884db1e677bea6ed8d8, type: 3}
+  - {fileID: 8529142968732920044, guid: ae51584147f98274789103eb9ecb7ebb, type: 3}
+  - {fileID: 8529142968732920044, guid: fb7d740a1c4618c44ad7a8baf5ee7dbe, type: 3}
+  pathPrefabs:
+  - {fileID: 1077405935691308473, guid: cb50e31d56dbaec41a9fefcd753c7475, type: 3}
+  timeBetweenSpawns: 0.5
+  numberOfEnemies: 4
