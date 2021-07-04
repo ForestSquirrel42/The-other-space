@@ -98,11 +98,6 @@ public class ShieldLogic : MonoBehaviour, IDamageable
         }
     }
 
-    public float GetCurrentShieldEnergy()
-    {
-        return currentShieldEnergy;
-    }
-
     public void SetShieldEnergy(float shieldEnergy)
     {
         currentShieldEnergy = shieldEnergy;
