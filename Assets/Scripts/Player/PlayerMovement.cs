@@ -29,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] References refs;
     private DialogueTrigger StartLevelDialogue;
 
-    
-
     private void Start()
     {
         StartLevelDialogue = refs.GetDialogueManagerOne().GetComponent<DialogueTrigger>();
@@ -63,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Tilting() // На случай если я захочу вернуть анимацию поворота корабля
+    private void Tilting() // In case I want to return tilting animation
      {
          if(transform.position.x < lastTransformPosition.x)
          {
@@ -79,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
          }
      } 
 
-    private IEnumerator StoringTransformPosition() // На случай если я захочу вернуть анимацию поворота корабля
+    private IEnumerator StoreLastTransformPosition() // Used for tilting animation
     {
         while (true)
         {
@@ -90,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator AppearOnScreen()
     {
-        TimeTravelMachineAnimation.DeactivateTimeMachine();
+        TimeTravelMachineVFX.DeactivateTimeMachine();
         AudioManager.PlayAudioByName("Ship appears");
 
         YChange = Mathf.Clamp(maxValue, minValue, maxValue);
@@ -138,4 +136,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-

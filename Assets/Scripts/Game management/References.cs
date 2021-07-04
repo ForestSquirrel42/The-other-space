@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class References : MonoBehaviour
 {
+    private static References instance;
+
     [Header("Fields to return to other scripts in scene")]
     [SerializeField] Transform playerPos;
     [SerializeField] GameObject hitVisualEffect;
@@ -36,6 +38,8 @@ public class References : MonoBehaviour
     
     private void Awake()
     {
+        instance = this;
+
         PD = FindObjectOfType<DataManager>(); 
         DSS = FindObjectOfType<DataSavingSystem>();
         SL = FindObjectOfType<SceneLoader>();
@@ -65,6 +69,8 @@ public class References : MonoBehaviour
     public DataManager GetProgressData() { return PD; }
 
     public PlayerMovement GetPlayerMovement() { return PM; }
+
+    public static PlayerMovement GetPlayerMovementStatic() { return instance.PM; }
 
     public SceneLoader GetSceneLoader() { return SL; }
 

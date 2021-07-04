@@ -7,7 +7,6 @@ using UnityEngine.Audio;
 public class IdleMusic : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
-
     private static IdleMusic instance;
 
     private void Awake()

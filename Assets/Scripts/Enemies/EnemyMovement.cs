@@ -36,7 +36,6 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] int waypointIndex = 0;
     private List<Transform> waypoints;
     
-
     [Header("Flying station variables")]
     [SerializeField] float rotationSpeed = 1f;
 
@@ -48,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        CheckMovementType();
+        SetUpMovementType();
     }
 
     private void GetWaypoints()
@@ -64,27 +63,27 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void CheckMovementType()
+    private void SetUpMovementType()
     {
         switch (currentState)
         {
             case States.straight:
-                StartCoroutine(StraightMovement());
+                StartCoroutine(MoveStraight());
                 break;
             case States.wavy:
-                StartCoroutine(WavyMovement());
+                StartCoroutine(MoveWavy());
                 break;
             case States.loop:
-                StartCoroutine(LoopedMovement());
+                StartCoroutine(MoveLooped());
                 break;
             case States.fromSideToSide:
                 StartCoroutine(MoveFromSideToSide());
                 break;
             case States.asteroid:
-                StartCoroutine(AsteroidMovement());
+                MoveAsteroid();
                 break;
             case States.redFlyingStation:
-                FlyingStationMovement();
+                MoveFlyingStation();
                 break;
             case States.waypointsFollower:
                 StartCoroutine(MoveToWaypoints());
@@ -97,7 +96,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void FlyingStationMovement()
+    private void MoveFlyingStation()
     {
         StartCoroutine(RotateStationContinuously());
         StartCoroutine(MoveToWaypoints());
@@ -122,7 +121,7 @@ public class EnemyMovement : MonoBehaviour
     {
         while(true)
         {
-            if (GunsOfEnemyBosses.isShooting == false && waypointIndex <= waypoints.Count - 1)
+            if (GunsOfEnemyBosses.IsShooting == false && waypointIndex <= waypoints.Count - 1)
             {
                 var targetPosition = waypoints[waypointIndex].transform.position;
                 var speed = moveSpeed * Time.deltaTime;
@@ -133,7 +132,7 @@ public class EnemyMovement : MonoBehaviour
 
                 if (transform.position == targetPosition)
                 {
-                    GunsOfEnemyBosses.isShooting = true;
+                    GunsOfEnemyBosses.IsShooting = true;
                     waypointIndex++;
                 }
             }
@@ -176,17 +175,12 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator AsteroidMovement()
+    private void MoveAsteroid()
     {
-        while(true)
-        {
-            rb.velocity = new Vector2(0f, -moveSpeed);
-
-            yield return new WaitForFixedUpdate();
-        }
+         rb.velocity = new Vector2(0f, -moveSpeed);
     }
 
-    private IEnumerator LoopedMovement()
+    private IEnumerator MoveLooped()
     {
         while(true)
         {
@@ -199,7 +193,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator WavyMovement()
+    private IEnumerator MoveWavy()
     {
         while(true)
         {
@@ -212,7 +206,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator StraightMovement()
+    private IEnumerator MoveStraight()
     {
         while(true)
         {

@@ -48,7 +48,7 @@ public class EnemySpawner : EnemyWaves
 
             StartCoroutine(SpawnMultipleEnemies(waveOrder : 3));
 
-            StartCoroutine(SpawnMultipleEnemies(waveOrder : 4, timeBetweenWaves + 1, kindOfDelay: 0));
+            StartCoroutine(SpawnMultipleEnemies(waveOrder : 4, spawnShift: timeBetweenWaves + 1, kindOfDelay: 0));
 
             StartCoroutine(SpawnMultipleEnemies(waveOrder: 5, spawnShift: 2f, kindOfDelay: 0));
 

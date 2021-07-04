@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public static event System.Action<float> OnHealthChanged = delegate { };
     private bool isShieldActive;
    
-    [Header("Visual effects effects")]
+    [Header("Visual effects")]
     [SerializeField] GameObject deathExplosionVFX;
     [SerializeField] GameObject hitExplosionParticles;
 
@@ -60,8 +60,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         switch(collision.gameObject.tag)
         {
             case "Enemy weapon":
-                var damageDealer = collision.gameObject.GetComponent<EnemyProjectilesLogic>();
-                playerHealth -= damageDealer.GetComponent<EnemyProjectilesLogic>().GetDamage();
+                var damageDealer = collision.gameObject.GetComponent<EnemyWeaponLogic>();
+                playerHealth -= damageDealer.GetComponent<EnemyWeaponLogic>().GetWeaponDamage();
                 break;
             case "Enemy":
                 var enemyCollisionDamage = collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
@@ -82,7 +82,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     }
 
     public void SetShieldState(bool shieldState)
-    {
+    { 
+        // This is used to ignore any occasional damage while shield is on
         this.isShieldActive = shieldState;
     }
 }

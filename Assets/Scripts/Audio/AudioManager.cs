@@ -26,16 +26,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayAudioByIndex(int clipOrder = 0)
-    {
-        Sound s = sounds[clipOrder];
-        s.audioSource.PlayOneShot(sounds[clipOrder].clip);
-    }
-
-    public static void PlayAudioByIndexStatic(int clipOrder = 0)
+    public static void PlayAudioByIndex(int clipOrder = 0)
     {
         var s = instance.sounds[clipOrder];
-        s.audioSource.Play();
+        s?.audioSource.Play();
     }
 
     public static void PlayAudioByName(string name)

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossDeathAnimation : MonoBehaviour
+public class BossDeathVFX : MonoBehaviour
 {
-    private static BossDeathAnimation instance;
+    private static BossDeathVFX instance;
 
     [SerializeField] GameObject smallerExplosion;
     [SerializeField] List<Transform> explosionPlacements;

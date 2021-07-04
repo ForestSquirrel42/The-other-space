@@ -18,12 +18,11 @@ public class PlayerFollower : MonoBehaviour
     private bool lookingAtPlayer = false;
     
     [Header("References and variables from other scripts")]
-    [SerializeField] WaveConfig waveConfig;
     List<Transform> waypoints;
     List<Transform> waypoints2;
-    References refs;
 
     [Header("Movement and rotation variables")]
+    [SerializeField] WaveConfig waveConfig;
     [SerializeField] float rotationTowardsPlayerSpeed = 0.1f;
     [SerializeField] float moveSpeed;
     public float xModifier;
@@ -34,7 +33,6 @@ public class PlayerFollower : MonoBehaviour
     
     private void Awake()
     {
-        refs = FindObjectOfType<References>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -57,7 +55,7 @@ public class PlayerFollower : MonoBehaviour
 
     private void SetUpReferences()
     {
-        playerPos = refs.GetPlayerPos();
+        playerPos = References.playerPositionStatic;
 
         if(waveConfig != null)
         {
@@ -68,7 +66,7 @@ public class PlayerFollower : MonoBehaviour
 
     private void MoveOnStraightLine()
     {
-        // „тобы поместить один корабль под другой, € создал два одинаковых префаба и в этом методе делаю проверку имЄн копий
+        // In order to place one ship above another, i've created a copy of the prefab and doing a name check here
         if (gameObject.name == "Turnung ship(Clone)") 
         {
             var waypoints = this.waypoints;
@@ -103,7 +101,7 @@ public class PlayerFollower : MonoBehaviour
 
     private IEnumerator LookAtPlayer()
     {
-        if(!lookingAtPlayer && refs.GetPlayerMovement() != null)
+        if(!lookingAtPlayer && References.GetPlayerMovementStatic() != null)
         {
             lookingAtPlayer = true;
             while (true)

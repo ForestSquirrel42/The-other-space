@@ -18,7 +18,6 @@ public class ShopManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI playerHealthText;
     [SerializeField] TextMeshProUGUI priceOfPlayerHealthUpgradeText;
 
-
     [Header("Shop values")]
     [SerializeField] int shieldUpgradeValue = 2;
     [SerializeField] int playerHealthUpgradeValue = 1;

@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EditorPlayerMovement : MonoBehaviour // Этот скрипт нужен только для управления кораблем в редакторе, ну или для WebGL возможно сгодится
+/**
+* This script is used only for player control in Editor.
+*/
+public class EditorPlayerMovement : MonoBehaviour 
 {
     float xMin;
     float xMax;

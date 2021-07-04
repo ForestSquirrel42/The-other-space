@@ -46,7 +46,7 @@ public class ShieldBooster : MonoBehaviour, IPlayerBoost
         StartCoroutine(StartTimer());
     }
 
-    public void DeactivateBooster()
+    public void DestroyBooster()
     {
 
     }

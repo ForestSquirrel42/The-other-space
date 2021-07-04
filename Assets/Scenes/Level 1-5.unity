@@ -593,7 +593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundScrollSpeed: 0.01
-  offset: {x: 0.05, y: 0.04}
 --- !u!23 &195086530
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -613,7 +612,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b31d9b0289abbc14aa0d298d1f458b16, type: 2}
+  - {fileID: 2100000, guid: e3faec968f333b54f8845ade1ede43d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1091,8 +1090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f19655a00f3f94a9b3d572d18f00e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 557735387}
-  playerHealth: {fileID: 844246286}
 --- !u!114 &557735387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,18 +1289,7 @@ MonoBehaviour:
   animator: {fileID: 553967347}
   typeSound: {fileID: 0}
   isPlayingTimeMachineEffect: 0
-  isEndGame: 0
---- !u!114 &844246286 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 522867529, guid: 282739042c333ba4e8d4fe52c20ce146, type: 3}
-  m_PrefabInstance: {fileID: 7044187179678585585}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a362042f7a5ad8f4bb5742025ae7218a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  isEndGameDialogue: 0
 --- !u!1 &956941421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6388233450904949955, guid: 2e01ac357edddf44bb3a230bdded809b, type: 3}
@@ -1448,7 +1434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42efa1d10e062e74e892232e7f1cbd2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 7044187179678585587}
   powerup: {fileID: 1351907055938919356, guid: f45739f25e0c73543ad93589d4329242, type: 3}
   minTimeBeforeSpawn: 30
   maxTimeBeforeSpawn: 60
@@ -1467,7 +1452,6 @@ MonoBehaviour:
   asteroid: {fileID: 1918926791905916897, guid: 905186104b387e04886a0aa7bda2c8fa, type: 3}
   minTimeBetweenSpawns: 2
   maxTimeBetweenSpawns: 10
-  references: {fileID: 183339725}
 --- !u!1001 &1014695343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1662,12 +1646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd2732e288e1ae47b6e2d9b8d1bcea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyBar: {fileID: 1067078770}
-  shieldLogics: {fileID: 1729096388}
-  PD: {fileID: 0}
-  refs: {fileID: 183339725}
-  currentEnergy: 0
-  maxEnergy: 0
+  updateSpeed: 5
 --- !u!114 &1067078770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,17 +2653,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1729096388 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9059144763808286479, guid: 282739042c333ba4e8d4fe52c20ce146, type: 3}
-  m_PrefabInstance: {fileID: 7044187179678585585}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b90f10777fac854dbb8db91f8a716b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1742036326
 GameObject:
   m_ObjectHideFlags: 0
@@ -9107,7 +9075,7 @@ MonoBehaviour:
   animator: {fileID: 553967347}
   typeSound: {fileID: 0}
   isPlayingTimeMachineEffect: 0
-  isEndGame: 0
+  isEndGameDialogue: 0
 --- !u!1 &8814810299119618305
 GameObject:
   m_ObjectHideFlags: 0

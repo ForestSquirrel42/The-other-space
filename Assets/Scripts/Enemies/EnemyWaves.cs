@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyWaves : MonoBehaviour
 {
     [Header("References to other scripts")]
-    public References references;
+    protected References references;
     protected SceneLoader sceneLoader;
 
     [Header("Spawning configuration")]
@@ -46,7 +46,12 @@ public class EnemyWaves : MonoBehaviour
         {
             if (enemyPrefabs.Count == 1)
             {
-                var singlePrefabEnemy = Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), new Vector3(waypoints[i].position.x, waypoints[i].position.y, -1), Quaternion.identity);
+                var singlePrefabEnemy = Instantiate
+                    (waveConfigs[waveOrder].GetEnemyPrefabByIndex(0),
+                    new Vector3(waypoints[i].position.x,
+                    waypoints[i].position.y, -1),
+                    Quaternion.identity);
+
                 enemies[i] = singlePrefabEnemy;
 
                 if (isLastWave == true && enemies[numberOfEnemies - 1] != null)
@@ -57,7 +62,12 @@ public class EnemyWaves : MonoBehaviour
 
             else if(enemyPrefabs.Count > 1)
             {
-                var enemy = Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(i), new Vector3(waypoints[i].position.x, waypoints[i].position.y, -1), Quaternion.identity);
+                var enemy = Instantiate
+                    (waveConfigs[waveOrder].GetEnemyPrefabByIndex(i),
+                    new Vector3(waypoints[i].position.x,
+                    waypoints[i].position.y, -1),
+                    Quaternion.identity);
+
                 enemies[i] = enemy;
 
                 if (isLastWave == true && enemies[numberOfEnemies - 1] != null)
@@ -81,26 +91,38 @@ public class EnemyWaves : MonoBehaviour
 
         for (int i = 0; i < 2; i++)
         {
-            Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), waypoints[i].position, Quaternion.identity); // Цикл спавнит двух врагов
+            Instantiate
+                (waveConfigs[waveOrder].GetEnemyPrefabByIndex(0),
+                waypoints[i].position,
+                Quaternion.identity);
         }
 
         yield return new WaitForSeconds(waveConfigs[waveOrder].GetTimeBetweenSpawns()); 
-        Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), waypoints[2].position, Quaternion.identity); // За ними спавнится третий
+        Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), waypoints[2].position, Quaternion.identity);
     }
 
-    protected virtual IEnumerator SpawnTwoFollowerTypeEnemies(int waveOrder, float spawnShift = 0) // Враги, поворачивающиеся в сторону игрока. Можно заспавнить от одного до двух
+    protected virtual IEnumerator SpawnTwoFollowerTypeEnemies(int waveOrder, float spawnShift = 0)
     {
         yield return new WaitForSeconds((timeBetweenWaves * waveOrder) + spawnShift);
 
         var waypoints = waveConfigs[waveOrder].GetWaypoints(0);
         
-        Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), new Vector3(waypoints[1].position.x + 5f, waypoints[1].position.y + 5f, waypoints[1].position.z), Quaternion.identity);
+        Instantiate
+            (waveConfigs[waveOrder].GetEnemyPrefabByIndex(0),
+            new Vector3(waypoints[1].position.x + 5f,
+            waypoints[1].position.y + 5f, waypoints[1].position.z),
+            Quaternion.identity);
 
         yield return new WaitForSeconds(waveConfigs[waveOrder].GetTimeBetweenSpawns());
 
         if (waveConfigs[waveOrder].GetNumberOfEnemies() == 2)
         {
-            Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(1), new Vector3(waypoints[1].position.x + 5f, waypoints[1].position.y + 5f, waypoints[1].position.z), Quaternion.identity);
+            Instantiate
+                (waveConfigs[waveOrder].GetEnemyPrefabByIndex(1),
+                new Vector3(waypoints[1].position.x + 5f,
+                waypoints[1].position.y + 5f,
+                waypoints[1].position.z),
+                Quaternion.identity);
         }
     }
 
@@ -125,7 +147,10 @@ public class EnemyWaves : MonoBehaviour
             }
         }
 
-        var enemy = Instantiate(waveConfigs[waveOrder].GetEnemyPrefabByIndex(0), waveConfigs[waveOrder].GetWaypoints(0)[0].position, Quaternion.identity);
+        var enemy = Instantiate
+            (waveConfigs[waveOrder].GetEnemyPrefabByIndex(0),
+            waveConfigs[waveOrder].GetWaypoints(0)[0].position,
+            Quaternion.identity);
 
         GameObject[] enemies = new GameObject[1];
         enemies[0] = enemy;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class TimeTravelMachineAnimation : MonoBehaviour
+public class TimeTravelMachineVFX : MonoBehaviour
 {
     [Header("Particle systems")]
     [SerializeField] ParticleSystem timeMachineCharge;
@@ -11,7 +11,10 @@ public class TimeTravelMachineAnimation : MonoBehaviour
     [SerializeField] ParticleSystem timeMachineDischarge;
     [SerializeField] ParticleSystem[] engineFlames;
 
-    private static TimeTravelMachineAnimation instance;
+    [Header("Parameters")]
+    [SerializeField] float delayBetweenVisualEffects = 1.52f;
+
+    private static TimeTravelMachineVFX instance;
 
     private void Awake()
     {
@@ -36,7 +39,7 @@ public class TimeTravelMachineAnimation : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.52f);
+        yield return new WaitForSeconds(instance.delayBetweenVisualEffects);
 
         instance.timeMachineActivated.Play();
         instance.timeMachineActivated.transform.parent = null;

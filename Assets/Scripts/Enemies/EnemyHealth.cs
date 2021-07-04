@@ -57,37 +57,19 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void ReceiveDamage(Collision2D collision)
     {
-        switch (collision.gameObject.tag)
-        {
-            case "Player weapon":
-                health -= collision.gameObject.GetComponent<PlayerWeaponLogic>().GetPlayerWeaponDamage();
-                break;
-            case "Enemy weapon":
-                health -= collision.gameObject.GetComponent<EnemyProjectilesLogic>().GetDamage();
-                break;
-            case "Player":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-            case "Asteroid":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-            case "Enemy":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-            case "Enemy of type chaser":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-            case "Boss":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-            case "Flying station":
-                health -= collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
-                break;
-        }
+        var collisionObj = collision.gameObject;
+
+        if (collisionObj.CompareTag("Player weapon"))
+            health -= collisionObj.GetComponent<PlayerWeaponLogic>().GetPlayerWeaponDamage();
+
+        else if (collisionObj.CompareTag("Enemy weapon"))
+            health -= collisionObj.GetComponent<EnemyWeaponLogic>().GetWeaponDamage();
+
+        else
+            health -= collisionObj.GetComponent<CollisionsDamage>().GetCollisionDamage();
 
         OnHealthChanged(health / maxHealth);
     }
-
 
     private void InstantiateSmallExplosion(Collision2D collision)
     {
@@ -126,7 +108,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
             isDeathInitiated = true;
             if(gameObject.CompareTag("Boss"))
             {
-               yield return BossDeathAnimation.PlayBossExplosion();
+               yield return BossDeathVFX.PlayBossExplosion();
             }
             PlayDeathVisualEffects();
             PlayExplosionSound();

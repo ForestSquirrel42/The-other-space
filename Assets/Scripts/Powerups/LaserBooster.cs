@@ -5,9 +5,14 @@ using DG.Tweening;
 
 public class LaserBooster : MonoBehaviour, IPlayerBoost
 {
+    [Header("Powerup configuration")]
     [SerializeField] float countDownValue = 3f;
     [SerializeField] float moveSpeed = 0.5f;
+
+    [Header("VFX")]
     [SerializeField] ParticleSystem activationParticles;
+
+    [Header("Script flow")]
     private PlayerShooting playerShooting;
     private float currentCountdownValue;
 
@@ -23,10 +28,8 @@ public class LaserBooster : MonoBehaviour, IPlayerBoost
         SwitchLaserType();
         PlayActivationEffects();
 
-        DeactivateBooster();
-        PingPongColors.StopTweening();
-        PingPongScale.StopTweening();
-
+        DestroyBooster();
+        
         yield return new WaitForSeconds(1f); // waiting for animation to play
         StartCoroutine(StartTimer(countDownValue));
     }
@@ -53,8 +56,10 @@ public class LaserBooster : MonoBehaviour, IPlayerBoost
         transform.Translate(new Vector3(0, -moveSpeed, 0) * Time.deltaTime);
     }
 
-    public void DeactivateBooster()
+    public void DestroyBooster()
     {
+        PingPongColors.StopTweening();
+        PingPongScale.StopTweening();
         Destroy(gameObject.GetComponent<Collider2D>());
     }
 

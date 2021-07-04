@@ -18,7 +18,9 @@ public class ShieldAppearance : MonoBehaviour
         if (animator.GetInteger("IsBoosterActive") == 0)
         {
             animator.SetBool("ReceivingDamage", true);
+
             yield return new WaitForSeconds(0.1f);
+
             animator.SetBool("ReceivingDamage", false);
             animator.Play("ShieldFadeOut");
         }

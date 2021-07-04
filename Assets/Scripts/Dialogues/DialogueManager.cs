@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] AudioSource typeSound;
     [SerializeField] bool isPlayingTimeMachineEffect;
-    [SerializeField] bool isEndGame;
+    [SerializeField] bool isEndGameDialogue;
     private Dialogue[] dialogue;
     private Queue<string> sentences;
     private byte typing;
@@ -117,7 +117,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueCounter = 0;
                 StartCoroutine(sceneLoader.LoadNextSceneWithTimeMachineAnimation());
             }
-            else if(isEndGame)
+            else if(isEndGameDialogue)
             {
                 StartCoroutine(sceneLoader.EndGameDramatically());
             }

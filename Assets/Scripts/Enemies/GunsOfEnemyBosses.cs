@@ -26,9 +26,8 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
     private static bool firstGunAllowed;
     private static bool secondGunsAllowed;
     private bool countdownIsStarted;
+    public static bool IsShooting { get; set; }
 
-
-    public static bool isShooting = false; // переменная для серой летающей станции. нужна для хардкоженой стрельбы с паузами
     public static GunsOfEnemyBosses instance;
 
     private void Awake()
@@ -47,7 +46,7 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
                 StartCoroutine(StartFiringTargeted());
                 break;
             case TypeOfGun.targetedSecondType:
-                StartCoroutine(StartFiringTargetedSecondType());
+                StartCoroutine(PrepareFiringByCurve());
                 break;
             case TypeOfGun.straight:
                 StartCoroutine(StartShootingStraight());
@@ -59,7 +58,7 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
     {
         while (true)
         {
-            if(isShooting)
+            if(IsShooting)
             {
                 if(!delayIsMade)
                 {
@@ -79,6 +78,22 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
             }
             yield return new WaitForSeconds(shotCounterForGreySpaceStation);
         }
+    }
+
+    private IEnumerator StartCountdown()
+    {
+        if (!countdownIsStarted)
+        {
+            countdownIsStarted = true;
+
+            yield return new WaitForSeconds(3f);
+
+            delayIsMade = false;
+            IsShooting = false;
+            countdownIsStarted = false;
+        }
+        else
+            yield break;
     }
 
     private IEnumerator StartShootingStraight()
@@ -104,16 +119,16 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
         }
     }
 
-    private IEnumerator StartFiringTargeted() // обычная стрельба в сторону игрока
+    private IEnumerator StartFiringTargeted() // This method is responsible for "main" weapon of last boss
     {
-        if (!delayIsMade) // пауза перед стрельбой для драматичного появления босса на экране
+        if (!delayIsMade) // Pause before shooting for dramatical boss appearing
         {
             delayIsMade = true;
             yield return new WaitForSeconds(5f);
             StartCoroutine(StartFiringTargeted());
             yield break;
         }
-        else if(!firstGunAllowed) // синхронизация орудий через булевые переменные
+        else if(!firstGunAllowed) // Hardcoded weapons synchronization via bool variables
         {
             yield return null;
             StartCoroutine(StartFiringTargeted());
@@ -153,19 +168,19 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
         }
     }
 
-    private IEnumerator StartFiringTargetedSecondType() // стрельба в сторону игрока с небольшим отклонением методом AddForce
+    private IEnumerator PrepareFiringByCurve()
     {
         if (!delayIsMade)
         {
             delayIsMade = true;
             yield return new WaitForSeconds(5f);
-            StartCoroutine(StartFiringTargetedSecondType());
+            StartCoroutine(PrepareFiringByCurve());
             yield break;
         }
         else if (!secondGunsAllowed)
         {
             yield return null;
-            StartCoroutine(StartFiringTargetedSecondType());
+            StartCoroutine(PrepareFiringByCurve());
             yield break;
         }
         else if(secondGunsAllowed)
@@ -187,12 +202,13 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
             }
             firstGunAllowed = true;
             yield return new WaitForSeconds(delayBetweenNextShooting);
-            StartCoroutine(StartFiringTargetedSecondType());
+            StartCoroutine(PrepareFiringByCurve());
         }
     }
 
     private IEnumerator FireByCurve(Vector3 shootingDirection, float angle, Quaternion rota)
     {
+        // This method is responsible for side weapons of last boss
         var releaseShot = Instantiate(enemyLaser, transform.position, rota);
         var rb = releaseShot.GetComponent<Rigidbody2D>();
 
@@ -209,22 +225,6 @@ public class GunsOfEnemyBosses : EnemyShootingParameters
             }
             yield return new WaitForSeconds(0.03f);
         }
-    }
-
-    private IEnumerator StartCountdown()
-    {
-        if (!countdownIsStarted)
-        {
-            countdownIsStarted = true;
-
-            yield return new WaitForSeconds(3f);
-
-            delayIsMade = false;
-            isShooting = false;
-            countdownIsStarted = false;
-        }
-        else
-            yield break;
     }
 
     public void PlayLaserSFX()

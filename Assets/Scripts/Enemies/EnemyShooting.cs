@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class EnemyShooting : EnemyShootingTypes, IEnemyShootingSounds
 {
-    private References refs;
     public bool IsShootingAllowed { get; set; }
 
     private void Awake()
@@ -36,10 +34,8 @@ public class EnemyShooting : EnemyShootingTypes, IEnemyShootingSounds
     {
         shotCounter = UnityEngine.Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
 
-        refs = FindObjectOfType<References>();
-
         if (projectileType == ProjectileType.targeted)
-            playerPos = refs.GetPlayerPos();
+            playerPos = References.playerPositionStatic;
     }
 
     private IEnumerator CountDownAndShoot()

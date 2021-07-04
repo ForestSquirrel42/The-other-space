@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] TextMeshProUGUI currencyValue;
     [SerializeField] DataSavingSystem DSS;
     [SerializeField] PlayerMovement PM;
-    public PlayerShooting PS;
+    public PlayerShooting PlayerShooting;
 
     [Header("UI screens")]
     [SerializeField] GameObject winScreen;
@@ -117,11 +117,12 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public IEnumerator LoadNextSceneWithTimeMachineAnimation() // Ётот метод сделан дл€ сцен в которых нет врагов и кнопок перехода на следующий уровень
-    {
+    public IEnumerator LoadNextSceneWithTimeMachineAnimation()
+    {   
+        // This method was created for scripted dialogue scenes without any enemies
         StartCoroutine(PM.FlyOffScreen(fixedDeltaYChange: 0.0005f));
 
-        yield return StartCoroutine(TimeTravelMachineAnimation.ActivateTimeMachine());
+        yield return StartCoroutine(TimeTravelMachineVFX.ActivateTimeMachine());
 
         yield return new WaitForSeconds(1.8f);
 
@@ -193,7 +194,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadCurrentProgressLevel()
     {
-        StartCoroutine(LoadProgressLevel()); //  орутина обЄрнута в метод, потому что метод повешен на кнопку
+        StartCoroutine(LoadProgressLevel()); // Coroutine is wrapped in a method because it's attached to a button
     }
 
     private IEnumerator LoadProgressLevel()
@@ -240,7 +241,7 @@ public class SceneLoader : MonoBehaviour
 
     private void LoadShopScene()
     {
-        // Ётот метод прив€зан к Invoke
+        // This method is used for Invoking by string
         SceneManager.LoadScene("Shop");
     }
 
@@ -356,8 +357,6 @@ public class SceneLoader : MonoBehaviour
 
         youDiedRestartButton = references.GetYouDiedRestartButton();
         youDiedRestartButton.onClick.AddListener(PlayAgain);
-
-        
     }
 
     private void InitializeMajorButtons()
@@ -384,7 +383,8 @@ public class SceneLoader : MonoBehaviour
     {
         PM = references.GetPlayerMovement();
 
-        if (PM != null) PS = PM.GetComponent<PlayerShooting>();
+        if (PM != null)
+            PlayerShooting = PM.GetComponent<PlayerShooting>();
     }
 
     private void SetUpSingleton()

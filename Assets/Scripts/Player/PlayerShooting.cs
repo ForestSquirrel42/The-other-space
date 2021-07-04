@@ -17,7 +17,6 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] float profectileFiringPeriod = 0.2f;
     private Vector2 laserPlacement;
 
-
     private void Start()
     {
         StartCoroutine(FireContiniously());
@@ -70,14 +69,4 @@ public class PlayerShooting : MonoBehaviour
             StartCoroutine(FireContiniously());
         }
     }
-
-    public float GetFiringSpeed()
-    {
-        return profectileFiringPeriod;
-    }
-    public void SetFiringSpeed(float speed)
-    {
-        profectileFiringPeriod = speed;
-    }
-
 }

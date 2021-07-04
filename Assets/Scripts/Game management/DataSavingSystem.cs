@@ -3,7 +3,6 @@ using System.IO;
 
 public class DataSavingSystem : MonoBehaviour
 {
-    [Header("Script flow")]
     public static DataSavingSystem instance;
     private int isFirstRun;
 
@@ -14,6 +13,29 @@ public class DataSavingSystem : MonoBehaviour
     }
 
     private void Start()
+    {
+        DetectFirstAppLaunch();
+    }
+
+    private void SetUpSingleton()
+    {
+        if (instance == null)
+            instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void CreateDataManager()
+    {
+        gameObject.AddComponent<DataManager>();
+        Debug.Log("Creating data manager");
+    }
+
+    private void DetectFirstAppLaunch()
     {
         isFirstRun = PlayerPrefs.GetInt("isFirst");
         if (isFirstRun == 0)
@@ -28,24 +50,6 @@ public class DataSavingSystem : MonoBehaviour
             Debug.Log("welcome again!");
             LoadJsonData();
         }
-    }
-
-    private void CreateDataManager()
-    {
-        gameObject.AddComponent<DataManager>();
-        Debug.Log("Creating data manager");
-    }
-
-    private void SetUpSingleton()
-    {
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-        DontDestroyOnLoad(gameObject);
     }
 
     private SaveData CreateJsonDataForSaving()

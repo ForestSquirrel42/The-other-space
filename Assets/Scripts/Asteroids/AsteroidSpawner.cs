@@ -19,8 +19,9 @@ public class AsteroidSpawner : MonoBehaviour
             while (PlayerMovement.playerHasControl)
             {
                 Vector3 spawnPosition = new Vector3(Random.Range(-3.3f, 3.3f), 12f, -2f);
-                float timeBetweenSpawns = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
-                yield return new WaitForSeconds(timeBetweenSpawns);
+
+                yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns));
+
                 Instantiate(asteroid, spawnPosition, Quaternion.identity);
             }
         }

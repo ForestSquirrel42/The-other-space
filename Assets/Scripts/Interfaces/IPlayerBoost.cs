@@ -6,5 +6,5 @@ public interface IPlayerBoost
 {
     IEnumerator StartTimer(float countdownValue);
     void MoveBoostItem();
-    void DeactivateBooster();
+    void DestroyBooster();
 }

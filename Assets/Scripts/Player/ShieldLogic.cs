@@ -55,8 +55,8 @@ public class ShieldLogic : MonoBehaviour, IDamageable
         switch (collision.gameObject.tag)
         {
             case "Enemy weapon":
-                var damageDealer = collision.gameObject.GetComponent<EnemyProjectilesLogic>();
-                currentShieldEnergy -= damageDealer.GetComponent<EnemyProjectilesLogic>().GetDamage();
+                var damageDealer = collision.gameObject.GetComponent<EnemyWeaponLogic>();
+                currentShieldEnergy -= damageDealer.GetComponent<EnemyWeaponLogic>().GetWeaponDamage();
                 break;
             case "Enemy":
                 var enemyCollisionDamage = collision.gameObject.GetComponent<CollisionsDamage>().GetCollisionDamage();
