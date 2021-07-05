@@ -10,11 +10,6 @@ public class EnemyHPBar : MonoBehaviour, IHealthBar
     [SerializeField] Image border;
     [SerializeField] EnemyHealth enemyHealth;
 
-    private void Awake()
-    {
-        enemyHealth = transform.parent.transform.parent.GetComponentInChildren<EnemyHealth>(); // xd
-    }
-
     private void OnEnable()
     {
         enemyHealth.OnHealthChanged += HandleHealthChange;

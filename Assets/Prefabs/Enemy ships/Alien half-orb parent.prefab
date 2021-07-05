@@ -9874,6 +9874,7 @@ MonoBehaviour:
   hitVFX: {fileID: 7697159781975558175, guid: 278837963ee823a4387ea9536b0be330, type: 3}
   hitWithoutEmbersVFX: {fileID: 8277230259766885143, guid: 0c0d5804c60c7ad47a4fa85a3ec69c15, type: 3}
   destructionVFX: {fileID: 5845752769028321195, guid: 1e474f669006c8342a3356ac00ac5fba, type: 3}
+  _deathExplosionPlacement: {fileID: 0}
   plasmaPerDeath: 1000
 --- !u!114 &7214270991555299277
 MonoBehaviour:
@@ -9914,7 +9915,6 @@ MonoBehaviour:
   yChange: 0
   sideToSideMovement: {x: 0, y: 0}
   waveConfig: {fileID: 11400000, guid: 7958a39367d32a141882cde34d57289e, type: 2}
-  waypoints: []
   waypointIndex: 0
   rotationSpeed: 20
 --- !u!114 &7214270989637635776
