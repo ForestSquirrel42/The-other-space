@@ -27,11 +27,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("References to other scripts")]
     [SerializeField] References refs;
-    private DialogueTrigger StartLevelDialogue;
 
     private void Start()
     {
-        StartLevelDialogue = refs.GetDialogueManagerOne().GetComponent<DialogueTrigger>();
         StartCoroutine(AppearOnScreen());
         cam = Camera.main;
     }
@@ -88,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator AppearOnScreen()
     {
+        var startLevelDialogue = refs.GetDialogueManagerOne().GetComponent<DialogueTrigger>();
         TimeTravelMachineVFX.DeactivateTimeMachine();
         AudioManager.PlayAudioByName("Ship appears");
 
@@ -106,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     isAppeared = true;
                     playerHasControl = true;
-                    StartLevelDialogue.TriggerDialogue();
+                    startLevelDialogue.TriggerDialogue();
                 }
         }
         newY = transform.position.y + YChange;
