@@ -3,7 +3,7 @@ using System.IO;
 
 public class DataSavingSystem : MonoBehaviour
 {
-    public static DataSavingSystem instance;
+    public static DataSavingSystem Instance { get; set; }
     private int isFirstRun;
 
     private void Awake()
@@ -19,8 +19,8 @@ public class DataSavingSystem : MonoBehaviour
 
     private void SetUpSingleton()
     {
-        if (instance == null)
-            instance = this;
+        if (Instance == null)
+            Instance = this;
         else
         {
             Destroy(gameObject);

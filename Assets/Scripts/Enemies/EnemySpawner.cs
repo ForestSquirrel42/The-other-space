@@ -5,7 +5,7 @@ public class EnemySpawner : EnemyWaves
 {
     private void Awake()
     {
-        sceneLoader = FindObjectOfType<SceneLoader>();
+        sceneLoader = SceneLoader.Instance;
     }
 
     void Start()

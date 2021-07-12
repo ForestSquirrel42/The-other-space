@@ -38,25 +38,21 @@ public class SceneLoader : MonoBehaviour
     [Header("Script flow")]
     private static bool coroutineAllowed;
     private bool loadingSceneAllowed;
-    private static SceneLoader instance;
+    public static SceneLoader Instance { get; set; }
 
     private void Awake()
     {
         SetUpSingleton();
-
         loadingSceneAllowed = true;
-
-        DSS = FindObjectOfType<DataSavingSystem>();
-        references = FindObjectOfType<References>();
-    }
-    
-    private void OnEnable()
-    {
-        InitializeMajorButtons();
     }
 
     private void Start()
     {
+        DSS = DataSavingSystem.Instance;
+        references = References.Instance;
+
+        InitializeMajorButtons();
+
         coroutineAllowed = true;
     }
 
@@ -73,12 +69,12 @@ public class SceneLoader : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        if (this != instance)
+        if (this != Instance)
             return;
 
         if (level >= 0)
         {
-            references = FindObjectOfType<References>();
+            references = References.Instance;
 
             DSS.LoadJsonData();
 
@@ -263,7 +259,7 @@ public class SceneLoader : MonoBehaviour
     {
         PlayerMovement.playerHasControl = false;
 
-        instance.youDiedScreen.SetActive(true);
+        Instance.youDiedScreen.SetActive(true);
     }
 
     public void SetCurrentProgressLevel()
@@ -361,6 +357,7 @@ public class SceneLoader : MonoBehaviour
 
     private void InitializeMajorButtons()
     {
+        Debug.Log("Initializing buttons");
         if(GetCurrentSceneByName() != "Shop")
         {
             hangarButton = references.GetHangarButton();
@@ -389,8 +386,8 @@ public class SceneLoader : MonoBehaviour
 
     private void SetUpSingleton()
     {
-        if (instance == null)
-            instance = this;
+        if (Instance == null)
+            Instance = this;
         else
         {
             Destroy(gameObject);

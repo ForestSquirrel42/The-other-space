@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
-    private static AudioManager instance;
+    public static AudioManager Instance { get; set; }
 
     private void Awake()
     {
@@ -28,21 +28,21 @@ public class AudioManager : MonoBehaviour
 
     public static void PlayAudioByIndex(int clipOrder = 0)
     {
-        var s = instance.sounds[clipOrder];
+        var s = Instance.sounds[clipOrder];
         s?.audioSource.Play();
     }
 
     public static void PlayAudioByName(string name)
     {
-        Sound s = Array.Find(instance.sounds, sound => sound.name == name);
+        Sound s = Array.Find(Instance.sounds, sound => sound.name == name);
 
         s?.audioSource.PlayOneShot(s.clip);
     }
 
     private void SetUpSingleton()
     {
-        if (instance == null)
-            instance = this;
+        if (Instance == null)
+            Instance = this;
         else
         {
             Destroy(gameObject);

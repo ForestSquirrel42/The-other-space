@@ -49,7 +49,7 @@ public class ShopManager : MonoBehaviour
 
     private void SetUpReferences()
     {
-        DSS = FindObjectOfType<DataSavingSystem>();
+        DSS = DataSavingSystem.Instance;
     }
 
     private void SetButtonsAvailability()
